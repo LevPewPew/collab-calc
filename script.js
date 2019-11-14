@@ -11,11 +11,6 @@ const btnDivide = document.querySelector('.btnDivide');
 const numField1 = document.querySelector('.num1');
 const numField2 = document.querySelector('.num2');
 
-function add(){
-
-}
-
-
 let subtract = (num1, num2) => {
   try 
   {
@@ -25,19 +20,37 @@ let subtract = (num1, num2) => {
     }
     return answer;
   }
-
   catch( err ) {
     return("caught an error " + err);
   }
 }
 
-function multiply(){
+// addition function for collab calculator 
+let add= (num1, num2) =>
+{
+  try
+  {
+    answer = num1 + num2
+    if(isNaN(answer))
+    {
+      throw "This is not a number, please only input numbers";
+    }
+    return answer; 
+  }
+  catch( error )
+  {
+    return( `Error:${ error }`);
+  }
+  finally 
+  {
+    // insert code to call input again?
+  }
+};
 
+let multiply = (num0, num1) => {
+  return num0 * num1;
 }
 
-function divide(){
-
-}
 btnAdd.addEventListener("click", add);
 btnSubtract.addEventListener("click", subtract);
 btnMultiply.addEventListener("click", multiply);
