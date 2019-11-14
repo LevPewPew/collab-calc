@@ -2,6 +2,7 @@
 //import Subtract script
 //import multiply script
 //import divide script
+import 'modulo.js'
 
 const btnAdd = document.querySelector('.btnAdd');
 const btnSubtract = document.querySelector('.btnSubtract');
