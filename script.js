@@ -2,15 +2,15 @@
 //import Subtract script
 //import multiply script
 //import divide script
-import 'modulo.js'
+// import './modulo.js';
 
 const btnAdd = document.querySelector('.btnAdd');
 const btnSubtract = document.querySelector('.btnSubtract');
 const btnMultiply = document.querySelector('.btnMultiply');
-const btnDivide = document.querySelector('.btnDivide');
-
+const btnModulo = document.querySelector('.btnModulo');
 const numField1 = document.querySelector('.num1');
 const numField2 = document.querySelector('.num2');
+const lblResult = document.querySelector('.lblResult');
 
 let subtract = (num1, num2) => {
   try 
@@ -27,7 +27,7 @@ let subtract = (num1, num2) => {
 }
 
 // addition function for collab calculator 
-let add= (num1, num2) =>
+let add = (num1, num2) =>
 {
   try
   {
@@ -52,7 +52,32 @@ let multiply = (num0, num1) => {
   return num0 * num1;
 }
 
-btnAdd.addEventListener("click", add);
-btnSubtract.addEventListener("click", subtract);
-btnMultiply.addEventListener("click", multiply);
-btnDivide.addEventListener("click", divide);
+function myAdd(){
+  let num1 = Number(numField1.value);
+  let num2 = Number(numField2.value);
+  lblResult.textContent = add(num1, num2);
+}
+
+function mySubtract(){
+  let num1 = Number(numField1.value);
+  let num2 = Number(numField2.value);
+  lblResult.textContent = subtract(num1, num2);
+}
+
+function myMultiply(){
+  let num1 = Number(numField1.value);
+  let num2 = Number(numField2.value);
+  lblResult.textContent = multiply(num1, num2);
+}
+
+function myModulo(){
+  let num1 = Number(numField1.value);
+  let num2 = Number(numField2.value);
+  lblResult.textContent = modulo(num1, num2);
+}
+
+btnAdd.addEventListener("click", myAdd);
+btnSubtract.addEventListener("click", mySubtract);
+btnMultiply.addEventListener("click", myMultiply);
+btnModulo.addEventListener("click", myModulo);
+
