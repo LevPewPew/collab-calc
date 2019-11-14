@@ -21,6 +21,7 @@ body {
       border-radius: 5px;
       font-size: 32px; }
       .calc-container .input-container input:focus {
+        outline: none;
         border: 3px solid black; }
   .calc-container .button-container {
     width: 100%;

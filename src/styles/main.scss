@@ -26,6 +26,7 @@ body {
       font-size: 32px;
       
       &:focus {
+        outline: none;
         border: 3px solid black;
       }
     }
