@@ -1,13 +1,11 @@
 
-let oddOrEven = (num) => {
+let oddOrEven = (num1, num2) => {
   try {
 
-    if(typeof(num) !== "number"){
+    if(typeof(num1) !== "number" && typeof(num2) !== "number"){
       throw "Invalid input.";
-    } else if(num % 2){
-      return true;
     } else {
-      return false;
+      return num1 % num2
     }
 
   } catch(error) {
@@ -16,5 +14,5 @@ let oddOrEven = (num) => {
 
 }
 
-console.log(oddOrEven(3));
+console.log(oddOrEven(247, 26));
 console.log(oddOrEven("heyhey"));
