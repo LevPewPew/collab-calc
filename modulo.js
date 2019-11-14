@@ -18,8 +18,3 @@ let oddOrEven = (num) => {
 
 console.log(oddOrEven(3));
 console.log(oddOrEven("heyhey"));
-
-
-// console.log(typeof("sgfsg"))
-
-
