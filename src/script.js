@@ -1,5 +1,6 @@
-// import './modulo.js';
+import {modulo} from "./modulo.js";
 
+// const modulo = require("./modulo.js");
 //Looking for the html element '.btnAdd' in the the index.html
 //and assign it to a variables called btnSubstract
 //the '.' at the front signifies that we are looking
@@ -17,6 +18,8 @@ const numField1 = document.querySelector('.num1');
 const numField2 = document.querySelector('.num2');
 //the label that display the result
 const lblResult = document.querySelector('.lblResult');
+
+
 
 let subtract = (num1, num2) => {
   try 

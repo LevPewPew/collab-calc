@@ -1,18 +1,18 @@
 
-let oddOrEven = (num1, num2) => {
-  try {
 
+export let modulo = (num1, num2) => {
+  try {
     if(typeof(num1) !== "number" && typeof(num2) !== "number"){
       throw "Invalid input.";
     } else {
-      return num1 % num2
+      let answer = num1 % num2
+      return answer
     }
-
   } catch(error) {
     return error;
   }
-
 }
 
-console.log(oddOrEven(247, 26));
-console.log(oddOrEven("heyhey"));
+// module.exports = modulo;
+
+// export {modulo} from 'modulo.js';
