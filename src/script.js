@@ -24,7 +24,7 @@ const lblResult = document.querySelector('.lblResult');
 let subtract = (num1, num2) => {
   try 
   {
-    answer = num1 - num2;
+    let answer = num1 - num2;
     if (isNaN(answer)) {
       throw "This is not a number." 
     }
