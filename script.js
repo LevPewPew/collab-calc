@@ -11,6 +11,8 @@ const btnDivide = document.querySelector('.btnDivide');
 const numField1 = document.querySelector('.num1');
 const numField2 = document.querySelector('.num2');
 
+
+// Subtraction function
 let subtract = (num1, num2) => {
   try 
   {
